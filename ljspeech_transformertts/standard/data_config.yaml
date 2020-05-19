@@ -1,6 +1,6 @@
 # PATHS: change accordingly
-data_directory: ~/datasets/LJSpeech-1.1
-log_directory: ~/logs/TTS4wavernn
+log_directory: '!!EDIT ME!! PATH/TO/tts_model_outputs/ljspeech_transformertts'
+data_directory: None
 train_data_directory: None
 wav_subdir_name: wavs
 metadata_filename: metadata.csv
