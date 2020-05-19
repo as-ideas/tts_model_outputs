@@ -1,0 +1,31 @@
+# PATHS: change accordingly
+data_directory: /Users/fcardina/datasets/LJSpeech-1.1
+log_directory: /Users/fcardina/logs/TTS4wavernn
+train_data_directory: /Users/fcardina/datasets/LJ_wavernn/
+#data_directory: '/home/sysgen/francesco/datasets/LJ_wavernn/'
+#log_directory: '/home/sysgen/francesco/logs/TTS4wavernn/'
+#train_data_directory: '/home/sysgen/francesco/datasets/LJ_wavernn/'
+wav_subdir_name: wavs
+metadata_filename: metadata.csv
+session_name: latest_head_drop
+
+# DATA
+n_samples: 100000
+n_test: 100
+mel_start_value: 4
+mel_end_value: -4
+
+# AUDIO
+sampling_rate: 22050
+n_fft: 2048
+mel_channels: 80
+hop_length: 275                    # 12.5ms - in line with Tacotron 2 paper
+win_length: 1100                   # 50ms - same reason as above
+f_min: 40
+min_level_db: -100
+ref_level_db: 20
+peak_norm: false  # if False, only normalizes to peak if peak>1
+max_norm: 4 # normalizes values between -max norm, max_norm
+
+# TOKENIZER
+phoneme_language: en
